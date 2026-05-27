@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komunitas Pemuda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+
+    <img src="pemuda.png" class="logo">
+
+    <h1>Wong Gabut</h1>
+
+    <p>
+      Papan kumpule wong gabut 
+      seng penting positif ora negatif
+    </p>
+
+    <div class="buttons">
+      <a href="#join" class="btn wa">🚀 Gabung Grup WhatsApp</a>
+      <a href="#galeri" class="btn foto">📸 Lihat Galeri</a>
+    </div>
+
+  </div>
+</header>
+
+<section class="about">
+  <h2>Tentang Kami</h2>
+  <p>
+    Wong wong gabute Desa Bayu Dusun Plantaran , Tetap Positif dan Santai 
+  </p>
+</section>
+
+<!-- KALENDER -->
+<section class="calendar-section">
+  <h2>Kalender 2026</h2>
+  <div id="cal2026"></div>
+
+  <h2>Kalender 2027</h2>
+  <div id="cal2027"></div>
+</section>
+
+<!-- GALERI -->
+<section class="galeri" id="galeri">
+  <h2>Galeri Kenangan</h2>
+
+  <div class="gallery">
+
+    <!-- FOTO 11 -->
+    <img src="foto1.jpg">
+    <img src="foto2.jpg">
+    <img src="foto3.jpg">
+    <img src="foto4.jpg">
+    <img src="foto5.jpg">
+    <img src="foto6.jpg">
+    <img src="foto7.jpg">
+    <img src="foto8.jpg">
+    <img src="foto9.jpg">
+    <img src="foto10.jpg">
+    <img src="foto11.jpg">
+
+    <!-- VIDEO 5 -->
+    <video controls><source src="video1.mp4"></video>
+    <video controls><source src="video2.mp4"></video>
+    <video controls><source src="video3.mp4"></video>
+    <video controls><source src="video4.mp4"></video>
+    <video controls><source src="video5.mp4"></video>
+
+  </div>
+</section>
+
+<!-- HARI PENTING -->
+<section class="tanggal">
+  <h2>Hari Penting 2026 - 2027</h2>
+
+  <div class="tanggal-box">
+
+    <!-- 2026 -->
+    <div class="item">🎇 <h3>1 Jan 2026</h3><p>Tahun Baru</p></div>
+    <div class="item">🌙 <h3>16 Jan 2026</h3><p>Isra Mikraj</p></div>
+    <div class="item">🧧 <h3>17 Feb 2026</h3><p>Imlek</p></div>
+    <div class="item">🙏 <h3>19 Mar 2026</h3><p>Nyepi</p></div>
+    <div class="item spesial">🕌 <h3>20 Mar 2026</h3><p>Idul Fitri</p></div>
+    <div class="item spesial">🐐 <h3>27 Mei 2026</h3><p>Idul Adha</p></div>
+    <div class="item">👷 <h3>1 Mei 2026</h3><p>Hari Buruh</p></div>
+    <div class="item">🎓 <h3>2 Mei 2026</h3><p>Hardiknas</p></div>
+    <div class="item">🌍 <h3>5 Jun 2026</h3><p>Hari Lingkungan</p></div>
+    <div class="item">🩸 <h3>14 Jun 2026</h3><p>Donor Darah</p></div>
+    <div class="item">🇮🇩 <h3>17 Agu 2026</h3><p>HUT RI</p></div>
+    <div class="item">👩 <h3>22 Des 2026</h3><p>Hari Ibu</p></div>
+    <div class="item">🎄 <h3>25 Des 2026</h3><p>Natal</p></div>
+
+    <!-- 2027 -->
+    <div class="item">🎇 <h3>1 Jan 2027</h3><p>Tahun Baru</p></div>
+    <div class="item">🌙 <h3>2027</h3><p>Isra Mikraj</p></div>
+    <div class="item">🕌 <h3>2027</h3><p>Idul Fitri</p></div>
+    <div class="item">🐐 <h3>2027</h3><p>Idul Adha</p></div>
+    <div class="item">🇮🇩 <h3>17 Agu 2027</h3><p>HUT RI</p></div>
+    <div class="item">🎄 <h3>25 Des 2027</h3><p>Natal</p></div>
+
+  </div>
+</section>
+
+<!-- JOIN -->
+<section class="join" id="join">
+  <div class="join-box">
+
+    <h2>Gabung Komunitas</h2>
+
+    <p>Masuk grup WhatsApp ayok nggedobos bareng.</p>
+
+    <a href="https://chat.whatsapp.com/I9jVtNATTxTAJT9Ju7pGSV" class="join-btn">
+      🚀 Masuk Grup
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Wong Gabut Plantaran</p>
+</footer>
+<!-- TOMBOL MUSIK -->
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<!-- TOMBOL SCROLL -->
+<button class="scroll-top" onclick="toggleScroll()">↓</button>
+
+<!-- AUDIO -->
+<audio autoplay loop id="musik">
+  <source src="musik.mp3" type="audio/mp3">
+</audio>
+<script src="script.js"></script>
+
+</body>
+</html>

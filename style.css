@@ -179,3 +179,24 @@ footer{
   border-radius:12px;
   font-weight:bold;
 }
+
+.gallery-buttons{
+  margin-top:25px;
+  text-align:center;
+}
+
+.gallery-btn{
+  display:inline-block;
+  padding:14px 24px;
+  background:#22c55e;
+  color:white;
+  text-decoration:none;
+  border-radius:14px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.gallery-btn:hover{
+  transform:scale(1.05);
+  background:#16a34a;
+}

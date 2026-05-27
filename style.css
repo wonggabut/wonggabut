@@ -164,3 +164,18 @@ footer{
   bottom:20px;
   background:#3b82f6;
 }
+
+.gallery-buttons{
+  margin-top:25px;
+  text-align:center;
+}
+
+.gallery-btn{
+  display:inline-block;
+  padding:12px 20px;
+  background:#22c55e;
+  color:white;
+  text-decoration:none;
+  border-radius:12px;
+  font-weight:bold;
+}

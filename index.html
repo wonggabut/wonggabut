@@ -3,275 +3,456 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Komunitas Pemuda</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Wong Gabut | Komunitas Plantaran</title>
+  <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon_atoms.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-
-<header class="hero">
-  <div class="hero-content">
-
-    <img src="pemuda.png" class="logo">
-
-    <h1>Wong Gabut</h1>
-
-    <p>
-      Papan kumpule wong gabut 
-      seng penting positif ora negatif
-    </p>
-
-    <div class="buttons">
-      <a href="#join" class="btn wa">🚀 Gabung Grup WhatsApp</a>
-      <a href="#galeri" class="btn foto">📸 Lihat Galeri</a>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-text">WONG</span>
+        <span class="logo-accent">GABUT</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#kalender">Kalender</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#hari-penting">Hari Penting</a></li>
+        <li><a href="#join" class="nav-cta">Gabung</a></li>
+      </ul>
     </div>
+  </nav>
 
+  <!-- HERO SECTION -->
+  <header class="hero" id="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🎨 EST. 2026 • PLANTARAN</div>
+      <h1 class="hero-title">
+        <span class="title-line">WONG</span>
+        <span class="title-line accent">GABUT</span>
+      </h1>
+      <p class="hero-tagline">Cangkru'ane arek-arek penting positif ora negatif<br>ben urip luwih inspiratif 🔥</p>
+      <div class="hero-buttons">
+        <a href="#join" class="btn btn-primary">
+          <span class="btn-icon">🚀</span>
+          Gabung Sekarang
+        </a>
+        <a href="#galeri" class="btn btn-secondary">
+          <span class="btn-icon">📸</span>
+          Lihat Galeri
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="10">0</span>
+          <span class="stat-label">Anggota</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="13">0</span>+
+          <span class="stat-label">Kenangan</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">Komunitas</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll ke bawah</span>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// SIAPA KAMI</span>
+        <h2 class="section-title">Tentang <span class="text-accent">Kami</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="card-icon">🏘️</div>
+          <h3>Komunitas Desa</h3>
+          <p>Wong-wong gabute Desa Bayu Dusun Plantaran. Kumpul bareng, cerita bareng, seru-seruan bareng.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="card-icon">✨</div>
+          <h3>Tetap Positif</h3>
+          <p>Selalu positif dan santai. Nggak ada drama, yang ada cuma kebersamaan dan tawa.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="card-icon">🤝</div>
+          <h3>Solid & Kompak</h3>
+          <p>Saling support, saling bantu. Dari ngopi bareng sampai kegiatan desa, selalu bareng.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="join" id="join">
+    <div class="join-bg-effect"></div>
+    <div class="section-container">
+      <div class="join-content">
+       <span class="section-tag">// Layanan</span> 
+        <div class="join-icon">📲</div>
+        <h2 class="join-title">Mau<span class="text-accent">     Top UP...?</span></h2>
+        <a href="https://wa.me/6285761810331" target="_blank" class="btn btn-whatsapp">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          chat nomor ini
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+  <!-- KALENDER SECTION -->
+  <section class="kalender" id="kalender">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// JADWAL</span>
+        <h2 class="section-title">Kalender <span class="text-accent">2026</span></h2>
+      </div>
+      <div class="calendar-wrapper">
+        <div class="calendar-nav">
+          <button class="cal-nav-btn" id="prevYear">◀</button>
+          <span class="cal-year" id="calYear">2026</span>
+          <button class="cal-nav-btn" id="nextYear">▶</button>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI SECTION -->
+  <section class="galeri" id="galeri">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// MEMORIES</span>
+        <h2 class="section-title">Galeri <span class="text-accent">Kenangan</span></h2>
+      </div>
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="foto">Foto</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-type="foto">
+          <img src="foto1.jpg" alt="Kenangan 1" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-type="foto">
+          <img src="foto2.jpg" alt="Kenangan 2" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-type="foto">
+          <img src="foto3.jpg" alt="Kenangan 3" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-type="foto">
+          <img src="foto4.jpg" alt="Kenangan 4" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-type="foto">
+          <img src="foto5.jpg" alt="Kenangan 5" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-type="foto">
+          <img src="foto6.webp" alt="Kenangan 6" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-type="foto">
+          <img src="foto7.jpg" alt="Kenangan 7" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-type="foto">
+          <img src="foto8.webp" alt="Kenangan 8" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-type="foto">
+          <img src="foto9.jpg" alt="Kenangan 9" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-type="foto">
+          <img src="foto10.jpg" alt="Kenangan 10" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-type="foto">
+          <img src="foto11.jpg" alt="Kenangan 11" loading="lazy">
+          <div class="gallery-overlay">
+            <span>📸</span>
+          </div>
+        </div>
+        <div class="gallery-item video-item" data-type="video">
+          <video><source src="video1.mp4"></video>
+          <div class="gallery-overlay">
+            <span>▶️</span>
+          </div>
+        </div>
+        <div class="gallery-item video-item" data-type="video">
+          <video><source src="video2.mp4"></video>
+          <div class="gallery-overlay">
+            <span>▶️</span>
+          </div>
+        </div>
+        <div class="gallery-item video-item" data-type="video">
+          <video><source src="video3.mp4"></video>
+          <div class="gallery-overlay">
+            <span>▶️</span>
+          </div>
+        </div>
+        <div class="gallery-item video-item" data-type="video">
+          <video><source src="video4.mp4"></video>
+          <div class="gallery-overlay">
+            <span>▶️</span>
+          </div>
+        </div>
+        <div class="gallery-item video-item" data-type="video">
+          <video><source src="video5.mp4"></video>
+          <div class="gallery-overlay">
+            <span>▶️</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-cta">
+        <a href="https://drive.google.com/drive/folders/1jMrg4niLFRhv_sJCT5N5kh_rb3sfx4fz" target="_blank" class="btn btn-outline">
+          📸 Koleksi Lengkap di Drive
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HARI PENTING SECTION -->
+  <section class="hari-penting" id="hari-penting">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// MARK YOUR CALENDAR</span>
+        <h2 class="section-title">Hari <span class="text-accent">Penting</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🎇</span>
+            <h3>1 Jan 2026</h3>
+            <p>Tahun Baru</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🌙</span>
+            <h3>16 Jan 2026</h3>
+            <p>Isra Mikraj</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🧧</span>
+            <h3>17 Feb 2026</h3>
+            <p>Imlek</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🙏</span>
+            <h3>19 Mar 2026</h3>
+            <p>Nyepi</p>
+          </div>
+        </div>
+        <div class="timeline-item special" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🕌</span>
+            <h3>20 Mar 2026</h3>
+            <p>Idul Fitri</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">👷</span>
+            <h3>1 Mei 2026</h3>
+            <p>Hari Buruh</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🎓</span>
+            <h3>2 Mei 2026</h3>
+            <p>Hardiknas</p>
+          </div>
+        </div>
+        <div class="timeline-item special" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🐐</span>
+            <h3>27 Mei 2026</h3>
+            <p>Idul Adha</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🎗️</span>
+            <h3>1 Juni 2026</h3>
+            <p>Hari Lahir Pancasila</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🇮🇩</span>
+            <h3>17 Agu 2026</h3>
+            <p>HUT RI ke-81</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">✨</span>
+            <h3>25 Agu 2026</h3>
+            <p>Maulid Nabi</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">👩</span>
+            <h3>22 Des 2026</h3>
+            <p>Hari Ibu</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🎄</span>
+            <h3>25 Des 2026</h3>
+            <p>Natal</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🎇</span>
+            <h3>1 Jan 2027</h3>
+            <p>Tahun Baru 2027</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-emoji">🇮🇩</span>
+            <h3>17 Agu 2027</h3>
+            <p>HUT RI ke-82</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN SECTION -->
+  <section class="join" id="join">
+    <div class="join-bg-effect"></div>
+    <div class="section-container">
+      <div class="join-content">
+        <div class="join-icon">🚀</div>
+        <h2 class="join-title">Gabung <span class="text-accent">Komunitas</span></h2>
+        <p class="join-desc">Masuk grup WhatsApp, ayok nggedobos bareng. Seru-seruan, sharing, dan bikin kenangan baru!</p>
+        <a href="https://chat.whatsapp.com/I9jVtNATTxTAJT9Ju7pGSV" target="_blank" class="btn btn-whatsapp">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Masuk Grup WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">WONG<span class="text-accent">GABUT</span></span>
+        <p>Desa Bayu, Dusun Plantaran</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#join">Gabung</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Wong Gabut Plantaran. Made with iZeno🔥</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MUSIC TOGGLE -->
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle Music">
+    <span class="music-icon">🎵</span>
+    <div class="music-bars">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </button>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top-btn" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <!-- AUDIO -->
+  <audio loop id="musik">
+    <source src="musik.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+    <button class="lightbox-prev" id="lightboxPrev">◀</button>
+    <button class="lightbox-next" id="lightboxNext">▶</button>
   </div>
-</header>
 
-<section class="about">
-  <h2>Tentang Kami</h2>
-  <p>
-    Wong wong gabute Desa Bayu Dusun Plantaran , Tetap Positif dan Santai 
-  </p>
-</section>
-
-<!-- KALENDER -->
-<section class="calendar-section">
-  <h2>Kalender 2026</h2>
-  <div id="cal2026"></div>
-
-  <h2>Kalender 2027</h2>
-  <div id="cal2027"></div>
-</section>
-
-<!-- GALERI -->
-<section class="galeri" id="galeri">
-
-  <h2>Galeri Kenangan</h2>
-
-  <div class="gallery">
-
-    <!-- FOTO 11 -->
-    <img src="foto1.jpg">
-    <img src="foto2.jpg">
-    <img src="foto3.jpg">
-    <img src="foto4.jpg">
-    <img src="foto5.jpg">
-    <img src="foto6.jpg">
-    <img src="foto7.jpg">
-    <img src="foto8.jpg">
-    <img src="foto9.jpg">
-    <img src="foto10.jpg">
-    <img src="foto11.jpg">
-
-    <!-- VIDEO 5 -->
-    <video controls><source src="video1.mp4"></video>
-    <video controls><source src="video2.mp4"></video>
-    <video controls><source src="video3.mp4"></video>
-    <video controls><source src="video4.mp4"></video>
-    <video controls><source src="video5.mp4"></video>
-
-  </div>
-
-  <!-- TOMBOL DRIVE -->
-  <div class="gallery-buttons">
-
-    <a href="https://drive.google.com/drive/folders/1jMrg4niLFRhv_sJCT5N5kh_rb3sfx4fz"
-       target="_blank"
-       class="gallery-btn">
-
-       📸 Koleksi Lengkap
-
-    </a>
-
-  </div>
-
-</section>
-
-<!-- HARI PENTING -->
-<section class="tanggal">
-
-  <h2>Hari Penting 2026 - 2027</h2>
-
-  <div class="tanggal-box">
-
-    <!-- 2026 -->
-    <div class="item">
-      🎇
-      <h3>1 Jan 2026</h3>
-      <p>Tahun Baru</p>
-    </div>
-
-    <div class="item">
-      🌙
-      <h3>16 Jan 2026</h3>
-      <p>Isra Mikraj</p>
-    </div>
-
-    <div class="item">
-      🧧
-      <h3>17 Feb 2026</h3>
-      <p>Imlek</p>
-    </div>
-
-    <div class="item">
-      🙏
-      <h3>19 Mar 2026</h3>
-      <p>Nyepi</p>
-    </div>
-
-    <div class="item spesial">
-      🕌
-      <h3>20 Mar 2026</h3>
-      <p>Idul Fitri</p>
-    </div>
-
-    <div class="item spesial">
-      🐐
-      <h3>27 Mei 2026</h3>
-      <p>Idul Adha</p>
-    </div>
-
-    <div class="item">
-      👷
-      <h3>1 Mei 2026</h3>
-      <p>Hari Buruh</p>
-    </div>
-
-    <div class="item">
-      🎓
-      <h3>2 Mei 2026</h3>
-      <p>Hardiknas</p>
-    </div>
-
-    <div class="item">
-      🪷
-      <h3>31 Mei 2026</h3>
-      <p>Hari Raya Waisak</p>
-    </div>
-
-    <div class="item">
-      🎗️
-      <h3>1 Juni 2026</h3>
-      <p>Hari Lahir Pancasila</p>
-    </div>
-
-    <div class="item">
-      🌍
-      <h3>5 Jun 2026</h3>
-      <p>Hari Lingkungan</p>
-    </div>
-
-    <div class="item">
-      🩸
-      <h3>14 Jun 2026</h3>
-      <p>Donor Darah</p>
-    </div>
-
-    <div class="item">
-      🇮🇩
-      <h3>17 Agu 2026</h3>
-      <p>HUT RI</p>
-    </div>
-
-    <div class="item">
-      ✨
-      <h3>25 Agu 2026</h3>
-      <p>Maulid Nabi</p>
-    </div>
-
-    <div class="item">
-      👩
-      <h3>22 Des 2026</h3>
-      <p>Hari Ibu</p>
-    </div>
-
-    <div class="item">
-      🎄
-      <h3>25 Des 2026</h3>
-      <p>Natal</p>
-    </div>
-
-    <!-- 2027 -->
-    <div class="item">
-      🎇
-      <h3>1 Jan 2027</h3>
-      <p>Tahun Baru</p>
-    </div>
-
-    <div class="item">
-      🌙
-      <h3>2027</h3>
-      <p>Isra Mikraj</p>
-    </div>
-
-    <div class="item">
-      🕌
-      <h3>2027</h3>
-      <p>Idul Fitri</p>
-    </div>
-
-    <div class="item">
-      🐐
-      <h3>2027</h3>
-      <p>Idul Adha</p>
-    </div>
-
-    <div class="item">
-      🇮🇩
-      <h3>17 Agu 2027</h3>
-      <p>HUT RI</p>
-    </div>
-
-    <div class="item">
-      🎄
-      <h3>25 Des 2027</h3>
-      <p>Natal</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- JOIN -->
-<section class="join" id="join">
-
-  <div class="join-box">
-
-    <h2>Gabung Komunitas</h2>
-
-    <p>
-      Masuk grup WhatsApp ayok nggedobos bareng.
-    </p>
-
-    <a href="https://chat.whatsapp.com/I9jVtNATTxTAJT9Ju7pGSV"
-       class="join-btn">
-
-       🚀 Masuk Grup
-
-    </a>
-
-  </div>
-
-</section>
-
-<footer>
-  <p>© 2026 Wong Gabut Plantaran</p>
-</footer>
-
-<!-- TOMBOL MUSIK -->
-<button class="music-btn" onclick="toggleMusic()">🎵</button>
-
-<!-- TOMBOL SCROLL -->
-<button class="scroll-top" onclick="toggleScroll()">↓</button>
-
-<!-- AUDIO -->
-<audio autoplay loop id="musik">
-  <source src="musik.mp3" type="audio/mp3">
-</audio>
-
-<script src="script.js"></script>
-
+  <script src="./script.js" defer></script>
 </body>
 </html>
